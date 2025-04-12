@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmm4fr4pth76b"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_rhbj4"]
+
+[node name="SiliconBoule" instance=ExtResource("1_rhbj4")]
+base_component = true

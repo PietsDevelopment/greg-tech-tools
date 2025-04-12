@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddseu1h8capv0"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_1gib0"]
+
+[node name="SulfuricAcid" instance=ExtResource("1_1gib0")]
+fluid = true
+base_component = true

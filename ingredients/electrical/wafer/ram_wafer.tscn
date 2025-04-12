@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://e4mow3duinxr"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_d53i8"]
+[ext_resource type="PackedScene" uid="uid://gds6f05ffttp" path="res://ingredients/electrical/wafer/wafer.tscn" id="2_o473c"]
+
+[node name="RAMWafer" instance=ExtResource("1_d53i8")]
+machine_type = 6
+machine_tier = 1
+machine_mode = "Cyan"
+
+[node name="Wafer" parent="." index="0" instance=ExtResource("2_o473c")]

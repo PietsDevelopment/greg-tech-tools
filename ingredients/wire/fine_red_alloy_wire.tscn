@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7buwlkeyopea"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_r6mg1"]
+[ext_resource type="PackedScene" uid="uid://8yvjxvmpcf5r" path="res://ingredients/ingots/red_alloy_ingot.tscn" id="2_kr500"]
+
+[node name="FineRedAlloyWire" instance=ExtResource("1_r6mg1")]
+machine_type = 7
+machine_mode = "3"
+
+[node name="RedAlloyIngot" parent="." index="0" instance=ExtResource("2_kr500")]
+count = 0.125
+input_to_output = Vector2(1, 8)

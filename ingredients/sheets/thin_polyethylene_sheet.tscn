@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bix1gi76uu8lj"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_5eont"]
+[ext_resource type="PackedScene" uid="uid://56hidbjmedu3" path="res://ingredients/sheets/polyethylene_sheet.tscn" id="2_s6357"]
+
+[node name="ThinPolyethyleneSheet" instance=ExtResource("1_5eont")]
+machine_type = 4
+machine_mode = "1"
+
+[node name="PolyethyleneSheet" parent="." index="0" instance=ExtResource("2_s6357")]
+count = 0.25
+input_to_output = Vector2(1, 4)

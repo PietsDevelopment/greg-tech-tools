@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3avs6rsfgwvq"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_ks08m"]
+[ext_resource type="PackedScene" uid="uid://dcicdyl4jdft0" path="res://ingredients/ingots/annealed_copper_ingot.tscn" id="2_o2s1w"]
+
+[node name="AnnealedCopperWire1x" instance=ExtResource("1_ks08m")]
+machine_type = 7
+machine_mode = "1"
+
+[node name="AnnealedCopperIngot" parent="." index="0" instance=ExtResource("2_o2s1w")]
+count = 0.5
+input_to_output = Vector2(1, 2)

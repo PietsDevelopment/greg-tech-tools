@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cvtgrmftlv1xa"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_lb45m"]
+[ext_resource type="PackedScene" uid="uid://delkodylg8b5i" path="res://ingredients/dusts/carbon_dust.tscn" id="2_u72ji"]
+[ext_resource type="PackedScene" uid="uid://driio0elj8qtm" path="res://ingredients/wire/fine_electrum_wire.tscn" id="3_hwdnd"]
+[ext_resource type="PackedScene" uid="uid://dxjs6o4kbc6cn" path="res://ingredients/fluids/molten_polyethylene.tscn" id="4_jhbik"]
+
+[node name="Resistor" instance=ExtResource("1_lb45m")]
+machine_type = 9
+machine_tier = 1
+machine_mode = "3"
+
+[node name="CarbonDust" parent="." index="0" instance=ExtResource("2_u72ji")]
+count = 0.063
+input_to_output = Vector2(1, 16)
+
+[node name="FineElectrumWire" parent="." index="1" instance=ExtResource("3_hwdnd")]
+count = 0.25
+input_to_output = Vector2(1, 4)
+
+[node name="MoltenPolyethylene" parent="." index="2" instance=ExtResource("4_jhbik")]
+count = 0.125
+input_to_output = Vector2(1, 8)

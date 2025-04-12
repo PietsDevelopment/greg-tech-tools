@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://belilmyndbw0l"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_2pffh"]
+[ext_resource type="PackedScene" uid="uid://dxjs6o4kbc6cn" path="res://ingredients/fluids/molten_polyethylene.tscn" id="2_ald7k"]
+[ext_resource type="PackedScene" uid="uid://cl7o6x5kpjqh7" path="res://ingredients/sheets/copper_foil.tscn" id="3_jtg56"]
+[ext_resource type="PackedScene" uid="uid://c6w08yjvn8x6j" path="res://ingredients/wood_plank.tscn" id="4_p48u5"]
+
+[node name="GoodCircuitBoard" instance=ExtResource("1_2pffh")]
+machine_type = 9
+machine_mode = "6"
+
+[node name="MoltenPolyethylene" parent="." index="0" instance=ExtResource("2_ald7k")]
+count = 0.125
+input_to_output = Vector2(2, 16)
+
+[node name="CopperFoil" parent="." index="1" instance=ExtResource("3_jtg56")]
+count = 2.0
+input_to_output = Vector2(32, 16)
+
+[node name="WoodPlank" parent="." index="2" instance=ExtResource("4_p48u5")]
+count = 0.5
+input_to_output = Vector2(8, 16)

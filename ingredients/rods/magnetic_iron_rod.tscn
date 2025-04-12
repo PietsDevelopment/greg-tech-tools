@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2fmcly0k7e1n"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_khucp"]
+[ext_resource type="PackedScene" uid="uid://c2qh00vt8jph0" path="res://ingredients/rods/iron_rod.tscn" id="2_x6roq"]
+
+[node name="MagneticIronRod" instance=ExtResource("1_khucp")]
+machine_type = 11
+
+[node name="IronRod" parent="." index="0" instance=ExtResource("2_x6roq")]

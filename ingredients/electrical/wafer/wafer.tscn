@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://gds6f05ffttp"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_2u23e"]
+[ext_resource type="PackedScene" uid="uid://bmm4fr4pth76b" path="res://ingredients/electrical/wafer/silicon_boule.tscn" id="2_d7cd0"]
+
+[node name="Wafer" instance=ExtResource("1_2u23e")]
+machine_type = 5
+
+[node name="SiliconBoule" parent="." index="0" instance=ExtResource("2_d7cd0")]
+count = 0.063
+input_to_output = Vector2(1, 16)

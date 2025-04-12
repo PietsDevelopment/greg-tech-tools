@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3bp7y4i30gph"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_isdse"]
+
+[node name="CopperIngot" instance=ExtResource("1_isdse")]
+base_component = true

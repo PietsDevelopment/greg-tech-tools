@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://56hidbjmedu3"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_mcr8b"]
+[ext_resource type="PackedScene" uid="uid://dxjs6o4kbc6cn" path="res://ingredients/fluids/molten_polyethylene.tscn" id="2_xee21"]
+
+[node name="PolyethyleneSheet" instance=ExtResource("1_mcr8b")]
+machine_type = 1
+machine_mode = "Plate"
+
+[node name="MoltenPolyethylene" parent="." index="0" instance=ExtResource("2_xee21")]

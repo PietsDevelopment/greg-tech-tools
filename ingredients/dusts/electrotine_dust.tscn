@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8fyltof74bpw"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_3qnsr"]
+
+[node name="ElectrotineDust" instance=ExtResource("1_3qnsr")]
+base_component = true

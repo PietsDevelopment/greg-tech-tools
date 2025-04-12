@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfavli0tm3e8w"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_0mra0"]
+[ext_resource type="PackedScene" uid="uid://bix1gi76uu8lj" path="res://ingredients/sheets/thin_polyethylene_sheet.tscn" id="2_wgeld"]
+[ext_resource type="PackedScene" uid="uid://d3xwgkpmiqpk4" path="res://ingredients/sheets/thin_aluminum_sheet.tscn" id="3_1gq6u"]
+[ext_resource type="PackedScene" uid="uid://dxjs6o4kbc6cn" path="res://ingredients/fluids/molten_polyethylene.tscn" id="4_1isna"]
+
+[node name="Capacitor" instance=ExtResource("1_0mra0")]
+machine_type = 9
+machine_tier = 1
+machine_mode = "3"
+
+[node name="ThinPolyethyleneSheet" parent="." index="0" instance=ExtResource("2_wgeld")]
+count = 0.125
+input_to_output = Vector2(1, 8)
+
+[node name="ThinAluminumSheet" parent="." index="1" instance=ExtResource("3_1gq6u")]
+count = 0.25
+input_to_output = Vector2(1, 4)
+
+[node name="MoltenPolyethylene" parent="." index="2" instance=ExtResource("4_1isna")]
+count = 0.125
+input_to_output = Vector2(1, 8)

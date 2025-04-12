@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://32i1y5nl331j"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_mym0f"]
+[ext_resource type="PackedScene" uid="uid://c2qh00vt8jph0" path="res://ingredients/rods/iron_rod.tscn" id="2_ha4vr"]
+[ext_resource type="PackedScene" uid="uid://b2fmcly0k7e1n" path="res://ingredients/rods/magnetic_iron_rod.tscn" id="3_nfdjs"]
+[ext_resource type="PackedScene" uid="uid://cjpnfanj1v47g" path="res://ingredients/wire/copper_wire_1x.tscn" id="4_ha4vr"]
+[ext_resource type="PackedScene" uid="uid://dvhmxrgokl203" path="res://ingredients/cable/tin_cable_1x.tscn" id="5_nfdjs"]
+
+[node name="LvMotor" instance=ExtResource("1_mym0f")]
+machine_type = 9
+
+[node name="IronRod" parent="." index="0" instance=ExtResource("2_ha4vr")]
+count = 2.0
+input_to_output = Vector2(2, 1)
+
+[node name="MagneticIronRod" parent="." index="1" instance=ExtResource("3_nfdjs")]
+
+[node name="CopperWire1x" parent="." index="2" instance=ExtResource("4_ha4vr")]
+count = 4.0
+input_to_output = Vector2(4, 1)
+
+[node name="TinCable1x" parent="." index="3" instance=ExtResource("5_nfdjs")]
+count = 2.0
+input_to_output = Vector2(2, 1)

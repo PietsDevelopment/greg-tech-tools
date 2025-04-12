@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://bpfpbyxqt2ey4"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_oj3pp"]
+[ext_resource type="PackedScene" uid="uid://bx7llrxjtmu6n" path="res://ingredients/fluids/molten_tin.tscn" id="2_qpcu0"]
+[ext_resource type="PackedScene" uid="uid://i4c3th85d1a6" path="res://ingredients/wire/red_alloy_wire_1x.tscn" id="3_3pm01"]
+[ext_resource type="PackedScene" uid="uid://cvtgrmftlv1xa" path="res://ingredients/electrical/resistor.tscn" id="4_3pm01"]
+[ext_resource type="PackedScene" uid="uid://06tukanm6dwu" path="res://ingredients/electrical/vacuum_tube.tscn" id="5_r52hr"]
+[ext_resource type="PackedScene" uid="uid://belilmyndbw0l" path="res://ingredients/electrical/good_circuit_board.tscn" id="6_arapy"]
+
+[node name="ElectronicCircuit" instance=ExtResource("1_oj3pp")]
+machine_type = 3
+
+[node name="MoltenTin" parent="." index="0" instance=ExtResource("2_qpcu0")]
+
+[node name="RedAlloyWire1x" parent="." index="1" instance=ExtResource("3_3pm01")]
+count = 2.0
+input_to_output = Vector2(2, 1)
+
+[node name="Resistor" parent="." index="2" instance=ExtResource("4_3pm01")]
+count = 2.0
+input_to_output = Vector2(2, 1)
+
+[node name="VacuumTube" parent="." index="3" instance=ExtResource("5_r52hr")]
+count = 2.0
+input_to_output = Vector2(2, 1)
+
+[node name="GoodCircuitBoard" parent="." index="4" instance=ExtResource("6_arapy")]

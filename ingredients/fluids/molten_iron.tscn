@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfdb2bcxyp0c1"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_fkdyt"]
+
+[node name="MoltenIron" instance=ExtResource("1_fkdyt")]
+fluid = true

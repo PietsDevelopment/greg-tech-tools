@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://los7m7j6aa8c"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_yoqsb"]
+[ext_resource type="PackedScene" uid="uid://cjpnfanj1v47g" path="res://ingredients/wire/copper_wire_1x.tscn" id="2_1doj2"]
+[ext_resource type="PackedScene" uid="uid://csoxp4ly14vlk" path="res://ingredients/fluids/molten_rubber.tscn" id="3_bqjd6"]
+
+[node name="CopperCable1x" instance=ExtResource("1_yoqsb")]
+machine_type = 9
+machine_mode = "24"
+
+[node name="CopperWire1x" parent="." index="0" instance=ExtResource("2_1doj2")]
+
+[node name="MoltenRubber" parent="." index="1" instance=ExtResource("3_bqjd6")]

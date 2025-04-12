@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cp5no6ojboqin"]
+
+[ext_resource type="Script" uid="uid://cxwey3u532tpb" path="res://search_bar.gd" id="1_tpktn"]
+
+[node name="SearchBar" type="LineEdit"]
+script = ExtResource("1_tpktn")
+
+[node name="PopupMenu" type="PopupMenu" parent="."]

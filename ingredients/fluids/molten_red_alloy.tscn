@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://gim0ipwcm57n"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_0j2k2"]
+[ext_resource type="PackedScene" uid="uid://8yvjxvmpcf5r" path="res://ingredients/ingots/red_alloy_ingot.tscn" id="2_n002h"]
+
+[node name="MoltenRedAlloy" instance=ExtResource("1_0j2k2")]
+fluid = true
+machine_type = 2
+
+[node name="RedAlloyIngot" parent="." index="0" instance=ExtResource("2_n002h")]

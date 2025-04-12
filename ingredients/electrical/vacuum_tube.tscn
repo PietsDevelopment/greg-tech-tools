@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://06tukanm6dwu"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_oprr3"]
+[ext_resource type="PackedScene" uid="uid://cb28onjjjellh" path="res://ingredients/rods/steel_rod.tscn" id="3_0u8w6"]
+[ext_resource type="PackedScene" uid="uid://2fla5ayjiwlc" path="res://ingredients/electrical/glass_tube.tscn" id="4_iqqak"]
+[ext_resource type="PackedScene" uid="uid://d3avs6rsfgwvq" path="res://ingredients/wire/annealed_copper_wire_1x.tscn" id="5_ahjkm"]
+[ext_resource type="PackedScene" uid="uid://gim0ipwcm57n" path="res://ingredients/fluids/molten_red_alloy.tscn" id="5_uu3qo"]
+
+[node name="VacuumTube" instance=ExtResource("1_oprr3")]
+machine_type = 9
+machine_mode = "5"
+
+[node name="SteelRod" parent="." index="0" instance=ExtResource("3_0u8w6")]
+count = 0.5
+input_to_output = Vector2(4, 8)
+
+[node name="GlassTube" parent="." index="1" instance=ExtResource("4_iqqak")]
+count = 0.5
+input_to_output = Vector2(4, 8)
+
+[node name="MoltenRedAlloy" parent="." index="2" instance=ExtResource("5_uu3qo")]
+count = 0.0625
+input_to_output = Vector2(0.5, 8)
+
+[node name="AnnealedCopperWire1x" parent="." index="3" instance=ExtResource("5_ahjkm")]
+count = 0.5
+input_to_output = Vector2(4, 8)

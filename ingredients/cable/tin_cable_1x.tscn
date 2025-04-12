@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvhmxrgokl203"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_fnhnb"]
+[ext_resource type="PackedScene" uid="uid://csoxp4ly14vlk" path="res://ingredients/fluids/molten_rubber.tscn" id="2_ycmb2"]
+[ext_resource type="PackedScene" uid="uid://d2jmqnl5mjyq6" path="res://ingredients/wire/tin_wire_1x.tscn" id="3_ycmb2"]
+
+[node name="TinCable1x" instance=ExtResource("1_fnhnb")]
+machine_type = 9
+machine_mode = "24"
+
+[node name="MoltenRubber" parent="." index="0" instance=ExtResource("2_ycmb2")]
+
+[node name="TinWire1x" parent="." index="1" instance=ExtResource("3_ycmb2")]

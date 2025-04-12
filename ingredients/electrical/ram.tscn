@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://qj6myy3wl6mr"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_brdys"]
+[ext_resource type="PackedScene" uid="uid://e4mow3duinxr" path="res://ingredients/electrical/wafer/ram_wafer.tscn" id="2_2qhw8"]
+[ext_resource type="PackedScene" uid="uid://b4hf3mju2chco" path="res://ingredients/fluids/water.tscn" id="3_pnuxw"]
+
+[node name="RAM" instance=ExtResource("1_brdys")]
+machine_type = 5
+machine_tier = 1
+
+[node name="RAMWafer" parent="." index="0" instance=ExtResource("2_2qhw8")]
+count = 0.03125
+input_to_output = Vector2(1, 32)
+
+[node name="Water" parent="." index="1" instance=ExtResource("3_pnuxw")]
+count = 0.0084375
+input_to_output = Vector2(0.27, 32)

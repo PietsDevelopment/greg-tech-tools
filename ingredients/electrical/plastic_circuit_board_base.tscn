@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dct2gqvi7086m"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_o6r8i"]
+[ext_resource type="PackedScene" uid="uid://56hidbjmedu3" path="res://ingredients/sheets/polyethylene_sheet.tscn" id="2_vk8a4"]
+[ext_resource type="PackedScene" uid="uid://cl7o6x5kpjqh7" path="res://ingredients/sheets/copper_foil.tscn" id="3_3ifht"]
+[ext_resource type="PackedScene" uid="uid://ddseu1h8capv0" path="res://ingredients/fluids/sulfuric_acid.tscn" id="4_wprm4"]
+
+[node name="PlasticCircuitBoardBase" instance=ExtResource("1_o6r8i")]
+
+[node name="PolyethyleneSheet" parent="." index="0" instance=ExtResource("2_vk8a4")]
+
+[node name="CopperFoil" parent="." index="1" instance=ExtResource("3_3ifht")]
+count = 4.0
+input_to_output = Vector2(4, 1)
+
+[node name="SulfuricAcid" parent="." index="2" instance=ExtResource("4_wprm4")]
+count = 0.5
+input_to_output = Vector2(1, 2)

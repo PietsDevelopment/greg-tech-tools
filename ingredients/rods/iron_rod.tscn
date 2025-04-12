@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2qh00vt8jph0"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_j12uu"]
+[ext_resource type="PackedScene" uid="uid://drh34ej0730tc" path="res://ingredients/ingots/iron_ingot.tscn" id="2_vtpss"]
+
+[node name="IronRod" instance=ExtResource("1_j12uu")]
+machine_type = 10
+machine_mode = "Rod"
+
+[node name="IronIngot" parent="." index="0" instance=ExtResource("2_vtpss")]
+count = 0.5
+input_to_output = Vector2(1, 2)

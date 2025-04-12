@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://xrjpwosmr8o0"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_ir43h"]
+[ext_resource type="PackedScene" uid="uid://c24bxi6y80fw4" path="res://ingredients/ingots/steel_ingot.tscn" id="2_2wcim"]
+
+[node name="MoltenSteel" instance=ExtResource("1_ir43h")]
+fluid = true
+machine_type = 2
+machine_tier = 1
+
+[node name="SteelIngot" parent="." index="0" instance=ExtResource("2_2wcim")]

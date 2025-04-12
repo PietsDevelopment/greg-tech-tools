@@ -1,0 +1,40 @@
+[gd_scene load_steps=9 format=3 uid="uid://cvslr3cw6a0y1"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_yqwn2"]
+[ext_resource type="PackedScene" uid="uid://qj6myy3wl6mr" path="res://ingredients/electrical/ram.tscn" id="2_8x2b7"]
+[ext_resource type="PackedScene" uid="uid://cwpilm4npm3ms" path="res://ingredients/electrical/plastic_circuit_board.tscn" id="3_ubij8"]
+[ext_resource type="PackedScene" uid="uid://b7buwlkeyopea" path="res://ingredients/wire/fine_red_alloy_wire.tscn" id="4_nvscx"]
+[ext_resource type="PackedScene" uid="uid://sq7qwy2hhgdq" path="res://ingredients/electrical/small_coil.tscn" id="5_87tt2"]
+[ext_resource type="PackedScene" uid="uid://bfavli0tm3e8w" path="res://ingredients/electrical/capacitor.tscn" id="6_8g55o"]
+[ext_resource type="PackedScene" uid="uid://bx7llrxjtmu6n" path="res://ingredients/fluids/molten_tin.tscn" id="7_if1tc"]
+[ext_resource type="PackedScene" uid="uid://vj78k23322l0" path="res://ingredients/electrical/integrated_processor.tscn" id="8_5v7c4"]
+
+[node name="ProcessorAssembly" instance=ExtResource("1_yqwn2")]
+machine_type = 3
+machine_tier = 1
+
+[node name="RAM" parent="." index="0" instance=ExtResource("2_8x2b7")]
+count = 4.0
+input_to_output = Vector2(4, 1)
+
+[node name="PlasticCircuitBoard" parent="." index="1" instance=ExtResource("3_ubij8")]
+
+[node name="FineRedAlloyWire" parent="." index="2" instance=ExtResource("4_nvscx")]
+count = 8.0
+input_to_output = Vector2(8, 1)
+
+[node name="SmallCoil" parent="." index="3" instance=ExtResource("5_87tt2")]
+count = 4.0
+input_to_output = Vector2(4, 1)
+
+[node name="Capacitor" parent="." index="4" instance=ExtResource("6_8g55o")]
+count = 8.0
+input_to_output = Vector2(8, 1)
+
+[node name="MoltenTin" parent="." index="5" instance=ExtResource("7_if1tc")]
+count = 2.0
+input_to_output = Vector2(2, 1)
+
+[node name="IntegratedProcessor" parent="." index="6" instance=ExtResource("8_5v7c4")]
+count = 2.0
+input_to_output = Vector2(2, 1)

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx7llrxjtmu6n"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_q0isb"]
+[ext_resource type="PackedScene" uid="uid://b35amr7wxflm5" path="res://ingredients/ingots/tin_ingot.tscn" id="2_tejve"]
+
+[node name="MoltenTin" instance=ExtResource("1_q0isb")]
+fluid = true
+machine_type = 2
+
+[node name="TinIngot" parent="." index="0" instance=ExtResource("2_tejve")]

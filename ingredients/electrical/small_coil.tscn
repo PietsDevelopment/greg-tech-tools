@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://sq7qwy2hhgdq"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_qyw6h"]
+[ext_resource type="PackedScene" uid="uid://dxjs6o4kbc6cn" path="res://ingredients/fluids/molten_polyethylene.tscn" id="2_rom1f"]
+[ext_resource type="PackedScene" uid="uid://bku4ipf30s3ka" path="res://ingredients/steel_ring.tscn" id="2_x6nob"]
+[ext_resource type="PackedScene" uid="uid://cfp7rsv1v88km" path="res://ingredients/wire/fine_annealed_copper_wire.tscn" id="3_l3jnj"]
+
+[node name="SmallCoil" instance=ExtResource("1_qyw6h")]
+machine_type = 9
+machine_tier = 1
+machine_mode = "3"
+
+[node name="MoltenPolyethylene" parent="." index="0" instance=ExtResource("2_rom1f")]
+count = 0.063
+input_to_output = Vector2(1, 16)
+
+[node name="SteelRing" parent="." index="1" instance=ExtResource("2_x6nob")]
+count = 0.25
+input_to_output = Vector2(1, 4)
+
+[node name="FineAnnealedCopperWire" parent="." index="2" instance=ExtResource("3_l3jnj")]
+count = 0.5
+input_to_output = Vector2(1, 2)

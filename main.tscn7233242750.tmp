@@ -1,0 +1,102 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfxu6r5reyapd"]
+
+[ext_resource type="Script" uid="uid://yi4wn3tp8h44" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://cp5no6ojboqin" path="res://search_bar.tscn" id="3_h2yge"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_0xm2m")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="search" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("3_h2yge")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="count" type="SpinBox" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 128.0
+value = 1.0
+
+[node name="TabContainer" type="TabContainer" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 1
+
+[node name="Items" type="TabBar" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="list" type="ItemList" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/TabContainer/Items"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Tree" type="TabBar" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="tree" type="Tree" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/TabContainer/Tree"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="graph" type="GraphEdit" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/TabContainer/Tree"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scroll_offset = Vector2(-40, -40)
+
+[node name="Machines" type="TabBar" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="machines" type="ItemList" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/TabContainer/Machines"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="text_submitted" from="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/search" to="." method="_on_search_text_submitted"]
+[connection signal="value_changed" from="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/count" to="." method="_on_count_value_changed"]

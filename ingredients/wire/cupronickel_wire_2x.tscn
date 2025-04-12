@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsk68pw0q7uxe"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_rubkm"]
+[ext_resource type="PackedScene" uid="uid://bcgg42ckhunei" path="res://ingredients/ingots/cupro_nickel_ingot.tscn" id="2_42jxr"]
+
+[node name="CupronickelWire2x" instance=ExtResource("1_rubkm")]
+machine_type = 7
+machine_mode = "2"
+
+[node name="CuproNickelIngot" parent="." index="0" instance=ExtResource("2_42jxr")]

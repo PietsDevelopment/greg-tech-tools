@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://8yvjxvmpcf5r"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_hjh14"]
+[ext_resource type="PackedScene" uid="uid://c3bp7y4i30gph" path="res://ingredients/ingots/copper_ingot.tscn" id="2_jwnma"]
+[ext_resource type="PackedScene" uid="uid://bxqbxm2h1nuv5" path="res://ingredients/dusts/redstone.tscn" id="3_ex4hu"]
+
+[node name="RedAlloyIngot" instance=ExtResource("1_hjh14")]
+machine_type = 8
+
+[node name="CopperIngot" parent="." index="0" instance=ExtResource("2_jwnma")]
+
+[node name="Redstone" parent="." index="1" instance=ExtResource("3_ex4hu")]
+count = 4.0
+input_to_output = Vector2(4, 1)

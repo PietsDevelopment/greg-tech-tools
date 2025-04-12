@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://driio0elj8qtm"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_ax7mc"]
+[ext_resource type="PackedScene" uid="uid://t4am5n5u46cp" path="res://ingredients/ingots/electrum_ingot.tscn" id="2_1myha"]
+
+[node name="FineElectrumWire" instance=ExtResource("1_ax7mc")]
+machine_type = 7
+machine_mode = "3"
+
+[node name="ElectrumIngot" parent="." index="0" instance=ExtResource("2_1myha")]
+count = 0.125
+input_to_output = Vector2(1, 8)

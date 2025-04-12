@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxjs6o4kbc6cn"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_7qvr7"]
+
+[node name="MoltenPolyethylene" instance=ExtResource("1_7qvr7")]
+fluid = true
+base_component = true

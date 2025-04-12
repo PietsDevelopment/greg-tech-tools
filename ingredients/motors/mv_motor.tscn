@@ -1,0 +1,24 @@
+[gd_scene load_steps=6 format=3 uid="uid://c06xulwmnlyl5"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_a17q5"]
+[ext_resource type="PackedScene" uid="uid://los7m7j6aa8c" path="res://ingredients/cable/copper_cable_1x.tscn" id="2_fywnn"]
+[ext_resource type="PackedScene" uid="uid://cgae6oiewx857" path="res://ingredients/rods/magnetic_steel_rod.tscn" id="3_h41bg"]
+[ext_resource type="PackedScene" uid="uid://dsk68pw0q7uxe" path="res://ingredients/wire/cupronickel_wire_2x.tscn" id="4_nkk0h"]
+[ext_resource type="PackedScene" uid="uid://be2dv2pqy3ohm" path="res://ingredients/rods/aluminium_rod.tscn" id="5_8xnm6"]
+
+[node name="MvMotor" instance=ExtResource("1_a17q5")]
+machine_type = 9
+
+[node name="CopperCable1x" parent="." index="0" instance=ExtResource("2_fywnn")]
+count = 2.0
+input_to_output = Vector2(2, 1)
+
+[node name="MagneticSteelRod" parent="." index="1" instance=ExtResource("3_h41bg")]
+
+[node name="CupronickelWire2x" parent="." index="2" instance=ExtResource("4_nkk0h")]
+count = 4.0
+input_to_output = Vector2(4, 1)
+
+[node name="AluminiumRod" parent="." index="3" instance=ExtResource("5_8xnm6")]
+count = 2.0
+input_to_output = Vector2(2, 1)

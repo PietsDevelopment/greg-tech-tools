@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmfylw8g3x1fh"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_8rd56"]
+
+[node name="Iron3Chloride" instance=ExtResource("1_8rd56")]
+fluid = true
+base_component = true

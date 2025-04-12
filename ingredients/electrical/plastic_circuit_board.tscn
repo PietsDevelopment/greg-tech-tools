@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://cwpilm4npm3ms"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_oqdco"]
+[ext_resource type="PackedScene" uid="uid://dct2gqvi7086m" path="res://ingredients/electrical/plastic_circuit_board_base.tscn" id="2_u67oj"]
+[ext_resource type="PackedScene" uid="uid://cl7o6x5kpjqh7" path="res://ingredients/sheets/copper_foil.tscn" id="3_bg6tx"]
+[ext_resource type="PackedScene" uid="uid://bmfylw8g3x1fh" path="res://ingredients/fluids/iron_3_chloride.tscn" id="4_bg6tx"]
+
+[node name="PlasticCircuitBoard" instance=ExtResource("1_oqdco")]
+
+[node name="PlasticCircuitBoardBase" parent="." index="0" instance=ExtResource("2_u67oj")]
+
+[node name="CopperFoil" parent="." index="1" instance=ExtResource("3_bg6tx")]
+count = 6.0
+input_to_output = Vector2(6, 1)
+
+[node name="Iron3Chloride" parent="." index="2" instance=ExtResource("4_bg6tx")]
+count = 0.25
+input_to_output = Vector2(1, 4)

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://delkodylg8b5i"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_i6s56"]
+
+[node name="CarbonDust" instance=ExtResource("1_i6s56")]
+base_component = true

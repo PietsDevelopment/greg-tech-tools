@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dommslpllx0fj"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_vlcj1"]
+[ext_resource type="PackedScene" uid="uid://clk1f0lwv0t4v" path="res://ingredients/ingots/blue_alloy_ingot.tscn" id="2_cuye6"]
+
+[node name="BlueAlloyBolt" instance=ExtResource("1_vlcj1")]
+machine_type = 10
+machine_tier = 1
+machine_mode = "Bolt"
+
+[node name="BlueAlloyIngot" parent="." index="0" instance=ExtResource("2_cuye6")]
+count = 0.125
+input_to_output = Vector2(1, 8)

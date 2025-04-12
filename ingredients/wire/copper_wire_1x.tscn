@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjpnfanj1v47g"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_7a7p3"]
+[ext_resource type="PackedScene" uid="uid://c3bp7y4i30gph" path="res://ingredients/ingots/copper_ingot.tscn" id="2_a6utw"]
+
+[node name="CopperWire1x" instance=ExtResource("1_7a7p3")]
+machine_type = 7
+machine_mode = "1"
+
+[node name="CopperIngot" parent="." index="0" instance=ExtResource("2_a6utw")]
+count = 0.5
+input_to_output = Vector2(1, 2)

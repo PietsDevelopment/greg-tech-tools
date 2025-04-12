@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://hg801hhgxgb4"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_3gwgs"]
+
+[node name="AluminumIngot" instance=ExtResource("1_3gwgs")]
+base_component = true

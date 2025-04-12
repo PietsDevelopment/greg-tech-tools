@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxdaqp23y2kpe"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_qr3ir"]
+
+[node name="SilverIngot" instance=ExtResource("1_qr3ir")]
+base_component = true

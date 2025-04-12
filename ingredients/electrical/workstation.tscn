@@ -1,0 +1,40 @@
+[gd_scene load_steps=9 format=3 uid="uid://djivoe17dqkdn"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_1fwh8"]
+[ext_resource type="PackedScene" uid="uid://cwpilm4npm3ms" path="res://ingredients/electrical/plastic_circuit_board.tscn" id="2_gwgp6"]
+[ext_resource type="PackedScene" uid="uid://qj6myy3wl6mr" path="res://ingredients/electrical/ram.tscn" id="4_gwgp6"]
+[ext_resource type="PackedScene" uid="uid://driio0elj8qtm" path="res://ingredients/wire/fine_electrum_wire.tscn" id="4_pyq5j"]
+[ext_resource type="PackedScene" uid="uid://dommslpllx0fj" path="res://ingredients/blue_alloy_bolt.tscn" id="5_2fbfi"]
+[ext_resource type="PackedScene" uid="uid://by5qcir75buy8" path="res://ingredients/electrical/diode.tscn" id="6_mvjaj"]
+[ext_resource type="PackedScene" uid="uid://bx7llrxjtmu6n" path="res://ingredients/fluids/molten_tin.tscn" id="7_gwgp6"]
+[ext_resource type="PackedScene" uid="uid://cvslr3cw6a0y1" path="res://ingredients/electrical/processor_assembly.tscn" id="8_pyq5j"]
+
+[node name="Workstation" instance=ExtResource("1_1fwh8")]
+machine_type = 3
+machine_tier = 1
+
+[node name="PlasticCircuitBoard" parent="." index="0" instance=ExtResource("2_gwgp6")]
+
+[node name="FineElectrumWire" parent="." index="1" instance=ExtResource("4_pyq5j")]
+count = 8.0
+input_to_output = Vector2(8, 1)
+
+[node name="RAM" parent="." index="2" instance=ExtResource("4_gwgp6")]
+count = 8.0
+input_to_output = Vector2(8, 1)
+
+[node name="BlueAlloyBolt" parent="." index="3" instance=ExtResource("5_2fbfi")]
+count = 16.0
+input_to_output = Vector2(16, 1)
+
+[node name="Diode" parent="." index="4" instance=ExtResource("6_mvjaj")]
+count = 4.0
+input_to_output = Vector2(4, 1)
+
+[node name="MoltenTin" parent="." index="5" instance=ExtResource("7_gwgp6")]
+count = 2.0
+input_to_output = Vector2(2, 1)
+
+[node name="ProcessorAssembly" parent="." index="6" instance=ExtResource("8_pyq5j")]
+count = 2.0
+input_to_output = Vector2(2, 1)

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4hf3mju2chco"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_h0enl"]
+
+[node name="Water" instance=ExtResource("1_h0enl")]
+fluid = true
+base_component = true

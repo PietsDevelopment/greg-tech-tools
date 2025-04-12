@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5oqf6oqmhfwd"]
+
+[ext_resource type="PackedScene" uid="uid://ckbc76lhht4ry" path="res://recipe.tscn" id="1_umv6j"]
+[ext_resource type="PackedScene" uid="uid://gds6f05ffttp" path="res://ingredients/electrical/wafer/wafer.tscn" id="2_t5rty"]
+
+[node name="CPUWafer" instance=ExtResource("1_umv6j")]
+machine_type = 6
+machine_tier = 1
+machine_mode = "Diamond"
+
+[node name="Wafer" parent="." index="0" instance=ExtResource("2_t5rty")]
